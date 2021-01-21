@@ -22,7 +22,8 @@ body{
     background: url(../img/12.1.jpeg);
 }
 #pic2{
-    background: url(../img/bread.jpg);
+    background-color: rgb(195, 195, 195);
+    text-align: center;
 }
 #pic3{
     background-color: rgb(195, 195, 195);
