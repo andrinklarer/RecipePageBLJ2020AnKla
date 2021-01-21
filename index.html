@@ -3,9 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+        <link rel="stylesheet" href="style/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
     <title>Blog</title>
+    <style>
+        .workingpic{
+    animation:spin .1s linear infinite ;
+    }
+    body{
+        animation:spin 5s linear infinite ;
+    }
+        @keyframes spin{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(360deg)}	
+}
+
+    </style>
 </head>
 <body>
-    <h1>Hey</h1>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#index.html"><img src="img/logo2.jpg"  class="d-inline-block align-top" alt="Logo"></a>
+    </nav>
+      <div class="mainpic"><img src="img/logo.jpg" alt="Titelbild, Fruchtsalat">
+        <div class="container-fluid tcontainer">
+          <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4"><header><h1 class="btitel"></h1></header></div>
+            <div class="col-lg-4"></div>
+          </div>
+          </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="picdesc">
+              <div class="blogpic" id="pic1"></div>
+              <div class="desc">Hot Cocolate Cake</div>
+            </div>
+            <div class="blogdesc"> <p>
+            </p></div>
+          </div>
+          <div class="col-lg-6">
+            <div class="picdesc">
+              <div class="blogpic" id="pic2"></div>
+              <div class="desc">Homemade Bread</div>
+            </div>
+            <div class="blogdesc"> <p>  
+            </p></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="picdesc">
+                <div class="blogpic" id="pic3"><img src="img/working.jpg" alt="working"  class="workingpic"></div>
+              <div class="desc">Coming Soon!</div>
+            </div>
+            <div class="blogdesc"> <p>
+            </p></div>
+          </div>
+          <div class="col-lg-6">
+            <div class="picdesc">
+              <div class="blogpic" id="pic4"><img src="img/working.jpg" alt="working"  class="workingpic"></div>
+              <div class="desc">Coming Soon!</div>
+            </div>
+            <div class="blogdesc"> <p> 
+            </p></div>
+          </div>
+        </div>
 </body>
 </html>

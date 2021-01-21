@@ -1,0 +1,108 @@
+body{
+    background-color: rgb(245, 244, 242);
+}
+.navbar-brand img{
+    height: 100px;
+    border: 2px solid rgba(0, 0, 0, 0.815);
+}  
+.navbar{
+    background-color: #704113;
+}
+.tcontainer{
+    position: absolute;
+    top: 10px;
+}
+.container{
+    margin-top: -5vw;
+}
+.picdesc{
+    position: relative;
+}
+#pic1{
+    background: url(../img/12.1.jpeg);
+}
+#pic2{
+    background: url(../img/bread.jpg);
+}
+#pic3{
+    background-color: rgb(195, 195, 195);
+    text-align: center;
+}
+#pic4{
+    background-color: rgb(195, 195, 195);
+    text-align: center;
+}
+.workingpic{
+    height: 75%;
+    border-radius: 100%;
+}
+#pic1, #pic2, #pic3, #pic4{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: solid 2px black;
+    display: block;
+}
+.blogpic{
+    height: 25vw; 
+    z-index: -1;
+}
+.desc{
+    color: white;
+    font-size: 2.2vw;
+    text-align: center;
+    z-index: 10;
+    background-color: rgba(211, 211, 211, 0.5);
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Arvo', serif;
+    height: 30%;
+    padding-top: 5%;
+}
+.row{
+    margin-top: 40px;
+}
+.col-lg-6{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.blogdesc{
+    margin-top: 15px;
+    font-family: 'Arvo', serif;
+    text-align: justify;
+}
+.blogdesc p{
+    font-size: 1em;
+}
+
+.mainpic img{
+    width: 100%;
+    margin-top: -4vw;
+    position: relative;
+    z-index: -100;
+    
+}
+.mainpic {
+    position: relative;
+    
+}
+@media (max-width: 991px){
+    .desc {
+    font-size: 3vw;}
+    .row{
+        margin-top: 0;
+    }
+    .desc{
+        font-size: 6vw;
+        padding-top: 7%;
+    }
+    .blogpic{
+        height: 70vw;
+    }
+    .blogdesc{
+        margin-bottom: 1px;
+    }
+}
