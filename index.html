@@ -1,80 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
-        <link rel="stylesheet" href="style/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
-    <title>Blog</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Andrin's Bakery</title>
     <style>
-        .workingpic{
-    animation:spin .01s linear infinite ;
-    }
-    body{
-        animation:spin 0.03s linear infinite ;
-    }
-        @keyframes spin{
-	from{transform:rotate(0deg)}
-	to{transform:rotate(360deg)}	
-}
-
+      .workingpic:hover {
+        animation: spin 2s linear infinite;
+      }
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
     </style>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#index.html"><img src="img/logo2.jpg"  class="d-inline-block align-top" alt="Logo"></a>
-    </nav>
-      <div class="mainpic"><img src="img/logo.jpg" alt="Titelbild, Fruchtsalat">
-        <div class="container-fluid tcontainer">
+  </head>
+  <body>
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><div class="home-tab">Home</div></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"id="profile-tab"data-toggle="tab"href="#impressum"role="tab"aria-controls="impressum"aria-selected="false"> <div class="imp-tab">Impressum</div> </a>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+      <div
+        class="tab-pane fade show active"
+        id="home"
+        role="tabpanel"
+        aria-labelledby="home-tab"
+      >
+        <div class="mainpic">
+          <img src="img/logo2.jpg" alt="Andrins Bakery" />
+        </div>
+        <div class="container">
           <div class="row">
-            <div class="col-lg-4"></div>
-            <div class="col-lg-4"><header><h1 class="btitel"></h1></header></div>
-            <div class="col-lg-4"></div>
+            <div class="col-lg-6">
+              <div class="picdesc">
+                <a href="recipe.html"> <div class="blogpic" id="pic1"></div></a>
+                <div class="desc">Hot Cocolate Cake</div>
+              </div>
+              <div class="blogdesc"><p></p></div>
+            </div>
+            <div class="col-lg-6">
+              <div class="picdesc">
+                <div class="blogpic" id="pic2">
+                  <img src="img/working.jpg" alt="working" class="workingpic" />
+                </div>
+                <div class="desc">Coming Soon!</div>
+              </div>
+              <div class="blogdesc"><p></p></div>
+            </div>
           </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="picdesc">
+                <div class="blogpic" id="pic3">
+                  <img src="img/working.jpg" alt="working" class="workingpic" />
+                </div>
+                <div class="desc">Coming Soon!</div>
+              </div>
+              <div class="blogdesc"><p></p></div>
+            </div>
+            <div class="col-lg-6">
+              <div class="picdesc">
+                <div class="blogpic" id="pic4">
+                  <img src="img/working.jpg" alt="working" class="workingpic" />
+                </div>
+                <div class="desc">Coming Soon!</div>
+              </div>
+              <div class="blogdesc"><p></p></div>
+            </div>
           </div>
+        </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="picdesc">
-              <div class="blogpic" id="pic1"></div>
-              <div class="desc">Hot Cocolate Cake</div>
-            </div>
-            <div class="blogdesc"> <p>
-            </p></div>
+      <div class="tab-pane fade" id="impressum" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="mainpic">
+            <img src="img/logo2.jpg" alt="Andrins Bakery" />
           </div>
-          <div class="col-lg-6">
-            <div class="picdesc">
-                <div class="blogpic" id="pic2"><img src="img/working.jpg" alt="working"  class="workingpic"></div>
-              <div class="desc">Coming Soon!</div>
+          <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 indextitle">
+                    <h1>Impressum</h1>
+                </div>
             </div>
-            <div class="blogdesc"> <p>  
-            </p></div>
-          </div>
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4 mainsheet ">
+                    <p>
+                      Contact:
+                      <hr>
+                      Email: andrin.klarer@noseryoung.ch
+                      
+                    </p>
+                </div>
+                <div class="col-lg-4 mainsheet ">
+                    <p>
+                     We are a company located in the beauty of Switzerland. We are creating simple and easy understanding recipes.
+                     With us you can learn and improve your baking skills at home. 
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="picdesc">
-                <div class="blogpic" id="pic3"><img src="img/working.jpg" alt="working"  class="workingpic"></div>
-              <div class="desc">Coming Soon!</div>
-            </div>
-            <div class="blogdesc"> <p>
-            </p></div>
-          </div>
-          <div class="col-lg-6">
-            <div class="picdesc">
-              <div class="blogpic" id="pic4"><img src="img/working.jpg" alt="working"  class="workingpic"></div>
-              <div class="desc">Coming Soon!</div>
-            </div>
-            <div class="blogdesc"> <p> 
-            </p></div>
-          </div>
-        </div>
-</body>
+      </div>
+
+    
+    </div>
+  </body>
 </html>
