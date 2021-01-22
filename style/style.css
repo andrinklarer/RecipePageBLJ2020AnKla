@@ -14,7 +14,6 @@ body{
 }
 #pic1{
     background: url(../img/12.1.jpeg);
-    
 }
 #pic2{
     background-color: rgb(195, 195, 195);
@@ -28,11 +27,39 @@ body{
     background-color: rgb(195, 195, 195);
     text-align: center;
 }
+#pic5{
+    background-image: url(../img/1.jpeg);
+}
+#pic6{
+    background-image: url(../img/5.jpeg);
+}
+#pic7{
+    background-image: url(../img/3.jpeg);
+}
+#pic8{
+    background-image: url(../img/4.jpeg);
+}
+#pic9{
+    background-image: url(../img/7.jpeg);
+}
+#pic10{
+    background-image: url(../img/9.1.jpeg);
+}
+#pic11{
+    background-image: url(../img/10.1.jpeg);
+}
+#pic12{
+    background-image: url(../img/11.jpeg);
+}
+#pic13{
+    background-image: url(../img/12.4.jpeg);
+}
+
 .workingpic{
     height: 75%;
     border-radius: 100%;
 }
-#pic1, #pic2, #pic3, #pic4{
+#pic1, #pic2, #pic3, #pic4, #pic5,#pic6,#pic7,#pic8,#pic9,#pic10,#pic11,#pic12,#pic13{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -42,6 +69,9 @@ body{
 .blogpic{
     height: 25vw; 
     z-index: -1;
+}
+.recipepic{
+    height: 25vw; 
 }
 .desc{
     color: white;
@@ -66,9 +96,7 @@ body{
     padding-right: 30px;
 }
 
-.blogdesc p{
-    font-size: 1em;
-}
+
 
 .mainpic img{
     width: 100%;
@@ -81,24 +109,37 @@ body{
     position: relative;
     
 }
+.rowrecipe{
+    margin-top: 80px;
+}
 @media (max-width: 992px){
     .desc {
     font-size: 3vw;}
     .row{
         margin-top: 0;
     }
+    .rowrecipe{
+        margin-top: 80px;
+    }
     .desc{
         font-size: 6vw;
         padding-top: 7%;
     }
-    .blogpic{
+    .blogpic {
+        height: 70vw;
+        
+    }
+    
+    .recipepic{
         height: 70vw;
     }
-    .sheetimg {
-        height: 70vw;
-    }
+    
     .blogdesc{
         margin-bottom: 1px;
+    }
+    .sheet{
+        height: 40vw !important;
+        font-size: 3vw !important;
     }
 }
 /*-------------------------------------------------------------------------------------------------*/
@@ -140,6 +181,9 @@ body{
         font-size: 1.5em;
         padding-top: 25px;
     }
+    h2{
+        font-size: 15vw !important;
+    }
 }
 @media (max-width: 767px){
     .nav{
@@ -155,9 +199,15 @@ body{
         font-size: 1.2em;
         padding-top: 20px;
     }
+    .sheet{
+        height: 70vw !important;
+        font-size: 5vw !important;
+    }
 }
 .fa-arrow-circle-left{
+    margin-top: 2vw;
     color: black;
+    font-size: 2vw;
 }
 
 .indextitle{
@@ -185,30 +235,52 @@ h1 {
     color:black;
     font-size: 7vw; 
 }
+h2 {
+    font-family: 'Arvo', serif;
+    text-align: center;
+    color:black;
+    font-size: 5vw; 
+    margin-bottom: 2vw;
+}
 .sheet {
     background-color: rgba(255, 255, 255, 0.9);
     border: 1px solid black;
     padding: 15px;
-    font-size: 22px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    padding-left: 1vw;
+    font-size: 1.9vw;
+    height: 25vw;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
-    transition: .2s;
-    
 }
-.sheetimg {
-    background-image: url(/img/1.jpeg);
-    border: 1px solid black;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
-    border-radius: 5px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    border: solid 2px black;
-    display: block;
-    height: 25vw; 
+.bottomrow{
+    margin-bottom: 5vw;
 }
 
+.button1 { 
+    border: none;
+    color:black;
+    padding: 8px; 
+    border-radius: 6px; 
+    background-image: url(../img/pdf.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0);
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.button1:hover{
+    cursor: pointer;
+}
+.button1:focus{
+    outline: 0;
+}
+#img1{
+    display: none;
+}
+.showpdf{
+    font-size: 22px;
+
+}
+.pdfrow{
+    margin-bottom: -80px;
+}
