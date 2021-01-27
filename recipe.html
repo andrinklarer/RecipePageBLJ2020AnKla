@@ -14,6 +14,7 @@
 />
 <link rel="stylesheet" href="style/style.css" />
 <title>Andrin's Bakery</title>
+<link rel="shortcut icon" type="image/png" href="img/tablogo.ico">
 </head>
 <body>
  
@@ -40,7 +41,7 @@
         
                   <script>
                     var v1 = true;
-                    document.querySelector ('.button1').onclick = function () {
+                    document.querySelector ('.button1').onmousedown = function () {
                       if ( v1 === true ) {
                         document.querySelector ('#img1').setAttribute('style','display:block');
                         document.querySelector (".showpdf").innerText = "Hide PDF";
@@ -70,7 +71,7 @@
                     <p>Ingredients
                         <hr>
                         <ul>
-                            <li>170g Dark Cocolate</li>
+                            <li>170g Dark Chocolate</li>
                             <li>225g Butter</li>
                             <li>6 Eggs</li>
                             <li>90g Wheat Flour</li>
@@ -220,6 +221,8 @@
             </div>    
         </div>
     </div>
-    
+    <footer>
+        &copy; 2021 Andrin Klarer | Alle Rechte Vorbehalten | Impressum
+      </footer>
 </body>
 </html>

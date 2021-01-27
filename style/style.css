@@ -11,6 +11,11 @@ body{
 }
 .picdesc{
     position: relative;
+    transition: transform .3s;
+    
+}
+.picdesc:hover{
+    transform: scale(1.03);
 }
 #pic1{
     background: url(../img/12.1.jpeg);
@@ -69,9 +74,12 @@ body{
 .blogpic{
     height: 25vw; 
     z-index: -1;
+    margin-bottom: 1rem;
 }
 .recipepic{
     height: 25vw; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
 }
 .desc{
     color: white;
@@ -147,6 +155,7 @@ body{
     background-color:  rgb(245, 244, 242);
     height: 100px;
     border: none;
+    transition: transform .3s;
     
 }
 .nav-item{
@@ -167,6 +176,23 @@ body{
     border: none;
     background-color: rgb(112, 65, 19) !important;
     color: #FFF !important;
+}
+.nav-link:hover{
+    color: black;
+}
+footer {
+    position: absolute;
+    bottom: 0px;
+    background-color: rgb(112, 65, 19) ;
+    color: white;
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+.margin{
+    margin-bottom: 100px;
 }
 
 @media (max-width: 992px){
@@ -232,8 +258,11 @@ body{
 h1 {
     font-family: 'Arvo', serif;
     text-align: center;
-    color:black;
-    font-size: 7vw; 
+    font-size: 1px;
+    color:rgb(112, 65, 19);
+    height: 0;
+    z-index: -1000;
+
 }
 h2 {
     font-family: 'Arvo', serif;
