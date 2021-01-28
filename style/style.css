@@ -210,6 +210,14 @@ footer {
     h2{
         font-size: 15vw !important;
     }
+    .fa-arrow-circle-left{
+        margin-top: 5vw;
+        font-size: 5vw !important;
+        
+    }
+    #home{
+        display: none;
+    }
 }
 @media (max-width: 767px){
     .nav{
@@ -229,6 +237,12 @@ footer {
         height: 70vw !important;
         font-size: 5vw !important;
     }
+    .fa-arrow-circle-left{
+        margin-top: 90vw;
+        font-size: 9vw !important;
+        
+    }
+
 }
 .fa-arrow-circle-left{
     margin-top: 2vw;
